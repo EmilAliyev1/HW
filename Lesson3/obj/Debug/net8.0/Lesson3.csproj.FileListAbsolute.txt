@@ -1,0 +1,15 @@
+C:\Users\aliye\RiderProjects\Csharp_Projects\Lesson3\bin\Debug\net8.0\Lesson3.exe
+C:\Users\aliye\RiderProjects\Csharp_Projects\Lesson3\bin\Debug\net8.0\Lesson3.deps.json
+C:\Users\aliye\RiderProjects\Csharp_Projects\Lesson3\bin\Debug\net8.0\Lesson3.runtimeconfig.json
+C:\Users\aliye\RiderProjects\Csharp_Projects\Lesson3\bin\Debug\net8.0\Lesson3.dll
+C:\Users\aliye\RiderProjects\Csharp_Projects\Lesson3\bin\Debug\net8.0\Lesson3.pdb
+C:\Users\aliye\RiderProjects\Csharp_Projects\Lesson3\obj\Debug\net8.0\Lesson3.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\aliye\RiderProjects\Csharp_Projects\Lesson3\obj\Debug\net8.0\Lesson3.AssemblyInfoInputs.cache
+C:\Users\aliye\RiderProjects\Csharp_Projects\Lesson3\obj\Debug\net8.0\Lesson3.AssemblyInfo.cs
+C:\Users\aliye\RiderProjects\Csharp_Projects\Lesson3\obj\Debug\net8.0\Lesson3.csproj.CoreCompileInputs.cache
+C:\Users\aliye\RiderProjects\Csharp_Projects\Lesson3\obj\Debug\net8.0\Lesson3.sourcelink.json
+C:\Users\aliye\RiderProjects\Csharp_Projects\Lesson3\obj\Debug\net8.0\Lesson3.dll
+C:\Users\aliye\RiderProjects\Csharp_Projects\Lesson3\obj\Debug\net8.0\refint\Lesson3.dll
+C:\Users\aliye\RiderProjects\Csharp_Projects\Lesson3\obj\Debug\net8.0\Lesson3.pdb
+C:\Users\aliye\RiderProjects\Csharp_Projects\Lesson3\obj\Debug\net8.0\Lesson3.genruntimeconfig.cache
+C:\Users\aliye\RiderProjects\Csharp_Projects\Lesson3\obj\Debug\net8.0\ref\Lesson3.dll

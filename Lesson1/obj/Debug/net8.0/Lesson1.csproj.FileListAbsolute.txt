@@ -12,3 +12,4 @@ C:\Users\aliye\RiderProjects\Csharp_Projects\Lesson1\obj\Debug\net8.0\refint\Les
 C:\Users\aliye\RiderProjects\Csharp_Projects\Lesson1\obj\Debug\net8.0\Lesson1.pdb
 C:\Users\aliye\RiderProjects\Csharp_Projects\Lesson1\obj\Debug\net8.0\Lesson1.genruntimeconfig.cache
 C:\Users\aliye\RiderProjects\Csharp_Projects\Lesson1\obj\Debug\net8.0\ref\Lesson1.dll
+C:\Users\aliye\RiderProjects\Csharp_Projects\Lesson1\obj\Debug\net8.0\Lesson1.sourcelink.json
