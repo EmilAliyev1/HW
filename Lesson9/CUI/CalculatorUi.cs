@@ -25,60 +25,54 @@ public class CalculatorUi{
 
     private int GetChoice(){
         if(!int.TryParse(Console.ReadLine(), out int choice)){
-            Console.WriteLine("Invalid choice input");
-            return -1;
+            throw new Exception("Invalid input");
         }
         if(choice < 1 || choice > _operations.Count + 1){
-            Console.WriteLine("The entered choice is out of range");
-            return -1;
+            throw new Exception("The entered choice is out of range");
         }
 
         return choice;
     }
 
+    private double GetNumber(){
+        if (!double.TryParse(Console.ReadLine(), out double num))
+        {
+            throw new Exception("Invalid input. You must enter a number!");
+        }
+
+        return num;
+    }
+
     public CalculatorUi(){
 
-            while(true){
-                try
-                {
-                    WriteOperationsNames();
+        while(true){
+            try
+            {
+                WriteOperationsNames();
 
-                    System.Console.Write("Enter your choice: ");
-                    int choice = GetChoice();
+                Console.Write("Enter your choice: ");
+                int choice = GetChoice();
 
-                    if (choice == -1){
-                        continue;
-                    }
-                    if(choice == _operations.Count + 1) {
-                        Console.WriteLine("Good bye!");
-                        break;
-                    }
-
-                    Console.Write("Enter first number: ");
-                    if (!double.TryParse(Console.ReadLine(), out double a))
-                    {
-                        Console.WriteLine("Invalid input. You must enter a number!");
-                        continue;
-                    }
-
-                    Console.Write("Enter second number: ");
-                    if (!double.TryParse(Console.ReadLine(), out double b))
-                    {
-                        Console.WriteLine("Invalid input. You must enter a number!");
-                        continue;
-                    }
-                    
-                    var operation = _operations[choice - 1];
-                    double res = operation.Execute(a, b);
-
-                    Console.WriteLine($"The result is: {res}");
+                if(choice == _operations.Count + 1) {
+                    Console.WriteLine("Good bye!");
+                    break;
                 }
-                catch (DivideByZeroException ex)
-                {
-                    Console.WriteLine(ex.Message);
-                }
+
+                double a = GetNumber();
+                double b = GetNumber();
+                
+                var operation = _operations[choice - 1];
+                double res = operation.Execute(a, b);
+
+                Console.WriteLine($"The result is: {res}");
             }
-        
-        
+            catch (DivideByZeroException ex)
+            {
+                Console.WriteLine(ex.Message);
+            }
+            catch (Exception ex){
+                Console.WriteLine(ex.Message);
+            }
+        }
     }
 }
