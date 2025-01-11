@@ -4,14 +4,15 @@ using Lesson11.Interfaces;
 
 Menu menu = new();
 IMovieService movieService = new MovieService();
-
-menu.DisplayMenu();
-
-MenuChoice choice = menu.GetMenuChoice();
+IFileService fileService = new FileService();
 
 bool flag = true;
 while (flag)
 {
+    menu.DisplayMenu();
+
+    MenuChoice choice = menu.GetMenuChoice();
+    
     switch (choice.Id)
     {
         case 1:
@@ -21,7 +22,9 @@ while (flag)
             var movieName = Console.ReadLine();
             
             var res = movieService.SearchMovie(movieName);
-
+            
+            fileService.SaveMovie(res);
+            
             Console.WriteLine(res);
 
             foreach (var movie in res.results)
@@ -34,6 +37,13 @@ while (flag)
             Console.WriteLine($"You chose {choice.Description}");
             break;
         case 3:
+            fileService.WriteAllMovieResults();
+            break;
+        case 4:
+            int.TryParse(Console.ReadLine(), out int index);
+            fileService.DeleteMovie(index);
+            break;
+        case 5:
             flag = false;
             Console.WriteLine("Exit");
             break;
