@@ -5,5 +5,7 @@ namespace Lesson11.Interfaces;
 
 public interface IFileService
 {
-    
+    void SaveMovie(MovieSearchResult result);
+    void DeleteMovie(int index);
+    void WriteAllMovieResults();
 }
